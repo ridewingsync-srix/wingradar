@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WingRadar | Ride Together. Stay Together.</title>
-  <meta name="description" content="WingRadar helps ride leaders and participants stay connected during active group rides with live rider positions, shared route context, formation awareness, and POI and SOS alerts built for the road.">
+  <meta name="description" content="Coordinate group rides with live rider positions, shared navigation, and WingRadio Tap to Talk voice communication for everyone in your active ride.">
   <link rel="icon" href="images/wing_sync_app_icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css?v=20260826-download-qr">
+  <link rel="stylesheet" href="style.css?v=20260914-wingradio">
 </head>
 <body>
   <header class="site-header">
@@ -132,6 +132,11 @@
         <h3>POI &amp; SOS Alerts</h3>
         <p>Find nearby fuel stations, charging points, and restaurants while keeping SOS readiness on.</p>
       </article>
+      <article class="feature-card">
+        <span class="feature-symbol" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg></span>
+        <h3>WingRadio</h3>
+        <p>Tap once to send a short voice broadcast to everyone else in your active ride — built for quick coordination without typing.</p>
+      </article>
     </section>
 
     <section id="markers" class="shell marker-strip">
@@ -215,7 +220,7 @@
         <article class="step-card">
           <span>3</span>
           <h3>Coordinate Live</h3>
-          <p>Stay aware, follow the route and keep the formation.</p>
+          <p>Stay aware, follow the route, keep formation, and use Tap to Talk for quick ride-wide voice updates.</p>
         </article>
         <article class="step-card">
           <span>4</span>
@@ -223,6 +228,16 @@
           <p>Use nearby fuel, charging, and restaurant stops plus emergency alerts to stay safe and coordinated.</p>
         </article>
       </div>
+      <aside class="wingradio-guide" aria-labelledby="wingradio-how">
+        <h3 id="wingradio-how">WingRadio — Tap to Talk</h3>
+        <ol class="wingradio-sequence">
+          <li>Tap <strong>TAP TO TALK</strong> once</li>
+          <li>Get ready for 1 second</li>
+          <li>Speak for approximately 5 seconds</li>
+          <li>Automatically sent to the rest of your active ride</li>
+        </ol>
+        <p>No holding the button and no manual Send step. Recording starts after the preparation period and stops automatically. Every active participant, Leader or Rider, can broadcast to the other riders in the same Ride ID.</p>
+      </aside>
     </section>
 
     <section id="use-cases" class="shell strip-section use-case-strip">
@@ -268,6 +283,7 @@
       <ul class="download-checks" aria-label="WingRadar capabilities">
         <li>Live convoy tracking</li>
         <li>Shared navigation</li>
+        <li>Tap to Talk with WingRadio</li>
         <li>Detour intelligence</li>
         <li>Background ride sync</li>
         <li>Ride markers</li>
@@ -300,8 +316,41 @@
         </details>
         <details>
           <summary>Which platforms is WingRadar available on?</summary>
-          <p>Android release access is coming soon. Availability may vary as the product develops.</p>
+          <p>WingRadar is available on Android through Google Play.</p>
         </details>
+      </div>
+      <div class="wingradio-faq" aria-labelledby="wingradio-faq-heading">
+        <h3 id="wingradio-faq-heading">WingRadio</h3>
+        <div class="faq-grid">
+          <details>
+            <summary>What is WingRadio?</summary>
+            <p>WingRadio is WingRadar’s ride-wide voice feature. Every active participant, Leader or Rider, can tap ‘TAP TO TALK’, wait one second, and record a short voice message for approximately five seconds. WingRadar stops recording, uploads it, and sends it automatically to the other participants in the active ride.</p>
+          </details>
+          <details>
+            <summary>Who can hear my WingRadio message?</summary>
+            <p>Only the other participants in the same active Ride ID receive the broadcast and hear it automatically. The sender does not hear their own transmission.</p>
+          </details>
+          <details>
+            <summary>Does WingRadar continuously listen to my microphone?</summary>
+            <p>No. WingRadar uses the microphone for WingRadio only when you intentionally start a TAP TO TALK transmission. After the one-second preparation period, the microphone records for approximately five seconds and then stops automatically.</p>
+          </details>
+          <details>
+            <summary>Are WingRadio voice messages stored permanently?</summary>
+            <p>No. WingRadio recordings are temporary operational messages used to deliver the broadcast to your active ride, not permanent voice-message history. Temporary audio normally expires after approximately one hour and is then cleaned up; deletion is not instantaneous.</p>
+          </details>
+          <details>
+            <summary>Does WingRadar transcribe or analyze my voice messages?</summary>
+            <p>No. WingRadar currently does not transcribe WingRadio recordings or analyze their spoken content for advertising or profiling.</p>
+          </details>
+          <details>
+            <summary>Can I receive WingRadio when the phone is locked or WingRadar is in the background?</summary>
+            <p>During an active ride, supported Android and iOS background services can allow WingRadio messages to be received while WingRadar is minimized or the screen is locked. Device, operating-system, network and battery settings can affect background behavior.</p>
+          </details>
+          <details>
+            <summary>What happens if I am listening to music?</summary>
+            <p>On supported devices, WingRadio temporarily takes audio priority so the ride message can be heard, then releases it so other audio can continue.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
@@ -334,7 +383,7 @@
       <a href="support.html">Help Center</a>
       <a href="terms.html">Safety Guide</a>
     </nav>
-    <p class="copyright">© 2025 WingRadar. All rights reserved.</p>
+    <p class="copyright">© 2026 WingRadar. All rights reserved.</p>
   </footer>
 </body>
 </html>

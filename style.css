@@ -758,13 +758,15 @@ p {
 }
 
 .feature-row {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.55rem;
   padding: 0.25rem 0 0.55rem;
 }
 
 .feature-card {
+  flex: 0 0 calc((100% - 1.65rem) / 4);
   min-height: 9.6rem;
   padding: 1rem 0.9rem;
   text-align: center;
@@ -1542,7 +1544,6 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .feature-row,
   .use-case-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1731,10 +1732,6 @@ p {
     top: 80%;
   }
 
-  .feature-row {
-    grid-template-columns: 1fr;
-  }
-
   .steps-row,
   .use-case-grid,
   .faq-grid,
@@ -1798,5 +1795,78 @@ p {
     transition-duration: 0.001ms !important;
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
+  }
+}
+
+/* WingRadio additions reuse the existing panels, colors and native FAQ controls. */
+.feature-symbol svg {
+  display: block;
+}
+
+.wingradio-guide {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.wingradio-guide p {
+  margin-bottom: 0;
+  font-size: 0.86rem;
+}
+
+.wingradio-sequence {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6rem 1.8rem;
+  padding-left: 1.25rem;
+  font-size: 0.86rem;
+}
+
+.wingradio-sequence li::marker {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.wingradio-faq {
+  grid-column: 2;
+}
+
+.wingradio-faq h3 {
+  margin-bottom: 0.75rem;
+}
+
+.wingradio-faq details {
+  align-self: start;
+}
+
+.wingradio-faq summary:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+#wingradio-how,
+#wingradio-privacy {
+  scroll-margin-top: 12rem;
+}
+
+@media (max-width: 1040px) {
+  .wingradio-faq {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 680px) {
+  .feature-card {
+    flex-basis: 100%;
+  }
+
+  .wingradio-sequence {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  #wingradio-how,
+  #wingradio-privacy {
+    scroll-margin-top: 18rem;
   }
 }
