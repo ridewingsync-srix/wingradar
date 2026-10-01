@@ -60,10 +60,10 @@
       <p>WingRadio transmissions are made available to authenticated participants in the same active ride, excluding the sender from delivery. WingRadar does not publicly broadcast these transmissions; users outside that ride are not intended recipients.</p>
 
       <h2>Ads</h2>
-      <p>WingRadar may show small banner ads outside active ride screens. Ads are not shown on the active ride map screen. Advertising partners may process ad-related data if ads are enabled.</p>
+      <p>WingRadar does not currently display third-party advertising.</p>
 
       <h2>Service providers</h2>
-      <p>WingRadar may use trusted service providers to process data for app operation. These providers may process operational data needed for authentication, notification and background delivery, hosting, security, diagnostics and reliability, as well as advertising-related data where applicable, according to their own terms and privacy policies. Voice content is not used for advertising or profiling.</p>
+      <p>WingRadar uses Firebase Authentication, Google Sign-In and Sign in with Apple for authentication and account identity. These providers process authentication and profile identity data needed to sign in and maintain an account. WingRadar may also use trusted service providers for notification and background delivery, hosting, security, diagnostics and reliability, according to their own terms and privacy policies. Voice content is not used for advertising or profiling.</p>
 
       <p>On supported Apple devices, WingRadar may use Apple notification and Push to Talk services with supported background audio to enable incoming ride communication while the app is minimized or the device is locked. Supported Android background services may also enable active-ride reception in these states. Device, operating-system, network and battery conditions can affect delivery.</p>
 
@@ -71,13 +71,13 @@
       <p>WingRadar may process temporary device or channel identifiers, including platform notification or Push to Talk tokens, to route active-ride communications to the user’s device. On iOS, an ephemeral Apple Push to Talk token may be registered while participating in an active ride. These identifiers are operational service-delivery metadata, not voice recordings or advertising identifiers.</p>
 
       <h2>Data retention</h2>
-      <p>Active ride information is used for live coordination and ride continuity. When a ride ends, active ride records and active rider movement records may be deleted. Limited operational records may be retained temporarily for security, abuse prevention, diagnostics, reliability, legal compliance, support, or service provider behavior. WingRadar does not promise permanent instant deletion of every record.</p>
+      <p>Active ride information is used for live coordination and ride continuity. When a rider exits or a ride ends, real-time location sharing stops. Completed Ride History, including historical location or replay information and related ride history needed for Ride History and Ride Replay, may be retained for up to 30 days after ride completion. Expired completed ride history is automatically deleted after that retention period. Limited operational records may be retained temporarily for security, abuse prevention, diagnostics, reliability, legal compliance, support, or service provider behavior. WingRadar does not promise permanent instant deletion of every record.</p>
 
       <p>WingRadio voice recordings are transient and have separate, limited retention for delivery. The current default expiry is approximately 60 minutes (one hour); expired audio is removed through cleanup processing, and ride lifecycle processing may also remove it. This does not create permanent voice-message history or guarantee deletion at an exact second. Limited operational communication metadata may be retained where necessary for reliability, security and diagnostics.</p>
 
       <h2>User deletion requests</h2>
-      <p>Users can request deletion by emailing <a href="mailto:support@ridewingsync.com">support</a>. Users may also have an in-app Delete Account option. Account deletion may be blocked while a user is actively leading a ride; the user should transfer leadership or end the ride first. See <a href="delete-account.html">Delete Account</a> for more information.</p>
-      <p>Deletion requests may include any remaining temporary WingRadio recordings and associated communication metadata, ride data, rider name, movement records, account data if available, and related stored information that can reasonably be associated with the user.</p>
+      <p>Account deletion is available from within WingRadar. An active ride leader must first transfer leadership or end the ride before deleting their account. Users can also request deletion by emailing <a href="mailto:support@ridewingsync.com">support</a>. See <a href="delete-account.html">Delete Account</a> for more information.</p>
+      <p>Account deletion removes the user's account, profile identifying information and account-associated data, including the user's stored telemetry and location history and WingRadio data. Shared ride records needed to preserve other participants' ride history may remain only in anonymized, non-identifying form. Temporary private WingRadio voice objects associated with the deleted account are removed through the deletion and cleanup process.</p>
 
       <h2>Children's privacy</h2>
       <p>WingRadar is not intended for children under 13. If you believe a child under 13 has provided information to WingRadar, contact support so the request can be reviewed.</p>
