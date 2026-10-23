@@ -170,69 +170,6 @@ img {
   padding: 0.65rem 1.25rem;
 }
 
-.download-qr {
-  position: relative;
-  display: inline-flex;
-}
-
-.qr-popover {
-  position: absolute;
-  left: 50%;
-  z-index: 30;
-  display: grid;
-  width: 12rem;
-  padding: 0.75rem;
-  border: 1px solid rgba(116, 158, 196, 0.38);
-  border-radius: 0.8rem;
-  background: #fff;
-  color: #071422;
-  text-align: center;
-  font-size: 0.76rem;
-  font-weight: 800;
-  line-height: 1.25;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.42);
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, 0.45rem);
-  transition: opacity 160ms ease, transform 160ms ease;
-}
-
-.qr-popover img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.45rem;
-}
-
-.download-qr-header .qr-popover {
-  top: calc(100% + 0.65rem);
-  right: 0;
-  left: auto;
-  transform: translateY(0.45rem);
-}
-
-.download-qr-header:hover .qr-popover,
-.download-qr-header:focus-within .qr-popover {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.download-qr-footer {
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.download-qr-visible {
-  display: block;
-  width: 4.9rem;
-  height: 4.9rem;
-  flex: 0 0 auto;
-  padding: 0.2rem;
-  border-radius: 0.45rem;
-  background: #fff;
-  object-fit: contain;
-}
-
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 0.98fr) minmax(520px, 1.3fr);
@@ -254,7 +191,6 @@ img {
 .feature-card,
 .strip-section,
 .phone-frame,
-.play-badge,
 .scan-box,
 .faq-grid details {
   border: 1px solid var(--line);
@@ -1159,42 +1095,38 @@ p {
 }
 
 .download-strip {
-  grid-template-columns: minmax(10rem, 0.55fr) auto 1fr;
+  grid-template-columns: minmax(13rem, 0.8fr) 15rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding-block: 1.5rem;
+}
+
+.store-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 .download-copy p {
   margin-bottom: 0;
 }
 
-.play-badge {
+.store-links > .store-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
-  min-width: 15.4rem;
-  padding: 0.7rem 1rem;
-  background: #050505;
-  color: #fff;
+  width: 232px;
+  max-width: 100%;
 }
 
-.play-triangle {
-  width: 2.35rem;
-  height: 2.35rem;
-  clip-path: polygon(10% 0, 100% 50%, 10% 100%);
-  background: linear-gradient(135deg, #1f6feb, #33c8ff 48%, #9fd8ff 76%, #2c72c7);
-}
-
-.play-badge small,
-.play-badge strong {
+.store-badge img {
   display: block;
-  line-height: 1.02;
+  width: 100%;
+  height: auto;
 }
 
-.play-badge small {
-  font-size: 0.7rem;
-}
-
-.play-badge strong {
-  font-size: 1.42rem;
+.store-badge-apple img {
+  height: 90px;
 }
 
 .download-checks {
@@ -1586,28 +1518,6 @@ p {
     width: 100%;
   }
 
-  .download-qr {
-    display: flex;
-    width: 100%;
-  }
-
-  .download-qr-footer {
-    gap: 0.5rem;
-  }
-
-  .download-qr-footer .play-badge {
-    flex: 1 1 auto;
-  }
-
-  .download-qr-visible {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .qr-popover {
-    display: none;
-  }
-
   .brand-logo {
     width: 10rem;
   }
@@ -1767,11 +1677,6 @@ p {
 
   .preview-intro {
     max-width: 22rem;
-  }
-
-  .play-badge {
-    justify-content: center;
-    min-width: 0;
   }
 
   .qr-block {
